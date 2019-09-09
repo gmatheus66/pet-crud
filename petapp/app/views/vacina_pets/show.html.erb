@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @vacina_pet.nome %>
+</p>
+
+<p>
+  <strong>Id seq:</strong>
+  <%= @vacina_pet.id_seq %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @vacina_pet.descricao %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @vacina_pet.preco %>
+</p>
+
+<%= link_to 'Edit', edit_vacina_pet_path(@vacina_pet) %> |
+<%= link_to 'Back', vacina_pets_path %>

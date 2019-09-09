@@ -1,0 +1,37 @@
+<%= form_with(model: vacina_pet, local: true) do |form| %>
+  <% if vacina_pet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vacina_pet.errors.count, "error") %> prohibited this vacina_pet from being saved:</h2>
+
+      <ul>
+        <% vacina_pet.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_seq %>
+    <%= form.text_field :id_seq %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :preco %>
+    <%= form.text_field :preco %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

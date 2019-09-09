@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  id_seq: MyString
+  descricao: MyText
+  preco: 9.99
+
+two:
+  nome: MyString
+  id_seq: MyString
+  descricao: MyText
+  preco: 9.99

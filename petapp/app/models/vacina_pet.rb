@@ -1,0 +1,2 @@
+class VacinaPet < ApplicationRecord
+end

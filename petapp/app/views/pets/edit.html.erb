@@ -1,0 +1,17 @@
+<nav style="margin-bottom: 5%;">
+  <div class="nav-wrapper">
+    <a href="" class="brand-logo">Editing Pet</a>
+  </div>
+</nav>
+
+
+<div style="margin-left: 25%; margin-right: 25%;">
+
+<%= render 'form', pet: @pet %>
+
+</div>
+
+<div style="margin-left: 45%; margin-right: 25%; margin-top: 5%;">
+<%= link_to 'Show', @pet %> |
+<%= link_to 'Back', pets_path %>
+</div>
